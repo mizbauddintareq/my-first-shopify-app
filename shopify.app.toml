@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "my-awesome-app"
+client_id = "60bbf2e4f90bd7ad67e8531812a4216c"
+application_url = "https://9e90-59-153-16-68.ngrok-free.app"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://9e90-59-153-16-68.ngrok-free.app/auth/callback",
+  "https://9e90-59-153-16-68.ngrok-free.app/auth/shopify/callback",
+  "https://9e90-59-153-16-68.ngrok-free.app/api/auth/callback",
+  "https://9e90-59-153-16-68.ngrok-free.app/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "techshopmizba.myshopify.com"
